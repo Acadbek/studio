@@ -1,5 +1,6 @@
 import React from "react";
 import useId from "../hooks/useID";
+import { ReactComponent as arrow } from "../assets/icons/arrow.svg";
 
 const HomePage = React.lazy(() => import("../pages/home"));
 const AboutPage = React.lazy(() => import("../pages/about"));
@@ -42,8 +43,35 @@ export const navbar = [
     ),
     title: "Spaces",
     path: "/spaces",
+    icon: arrow,
     private: false,
     hidden: false,
+    addition: [
+      {
+        id: useId,
+        icon: "",
+        title: "Cyc Wall",
+        path: "/spaces/wall",
+      },
+      {
+        id: useId,
+        icon: "",
+        title: "Co-Working",
+        path: "/spaces/wall",
+      },
+      {
+        id: useId,
+        icon: "",
+        title: "Podcasting",
+        path: "/spaces/wall",
+      },
+      {
+        id: useId,
+        icon: "",
+        title: "Warehouse",
+        path: "/spaces/wall",
+      },
+    ],
   },
   {
     id: useId,

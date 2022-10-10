@@ -1,16 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* box-sizing: border-box; */
+  /* scroll-behavior: smooth; */
 }
 
-
 body {
-  background-color: black;
-  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdfc;
+  /* color: whitesmoke; */
+  color: black;
   font-family: var(--inter);
 }
 
@@ -21,4 +27,8 @@ body {
   --black: #333332;
   --blackSecondary: #1d1b1b;
   --inter: "Inter", sans-serif;
+}
+
+.arrow path {
+  fill: red !important;
 }

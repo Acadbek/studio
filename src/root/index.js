@@ -9,16 +9,12 @@ const Root = () => {
     <>
       <Routes>
         <Route element={<Navbar />}>
-          {navbar.map(({ element, path, id, title }) => {
-            return (
-              <Route element={element} path={path} key={id}>
-                {title}
-              </Route>
-            );
+          {navbar.map(({ path, element, id }) => {
+            return <Route key={id} path={path} element={element} />;
           })}
-          <Route path="/" element={<Navigate to={"/home"} />} />
-          <Route path="*" element={<h1>404</h1>} />
         </Route>
+        <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+        <Route path="/" element={<Navigate to={"/home"} />} />
       </Routes>
     </>
   );

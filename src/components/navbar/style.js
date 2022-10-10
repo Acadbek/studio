@@ -1,52 +1,48 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as user } from "../../assets/icons/user.svg";
-const Section = styled.div`
-  display: flex;
-`;
 
 const Wrapper = styled.div`
-  position: fixed;
-  width: 100%;
-  top: 20px;
-  padding: var(--padding);
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 `;
 
-const Links = styled.div`
+const Container = styled.div`
+  height: 75px !important;
+  width: 95%;
+  position: fixed;
+  top: 20px;
   display: flex;
-  gap: 30px;
-  font-family: var(--inter);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  border-radius: 40px;
+  padding: 0px 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+`;
+
+const Logo = styled.div`
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 100;
+`;
+
+const Section = styled.div`
+  display: flex;
+  color: white;
+  gap: ${({ links }) => links && "20px"};
+  font-size: ${({ links }) => links && "14px"};
+  font-weight: ${({ links }) => links && "600"};
   .active {
     color: yellow;
   }
 `;
 
-const Container = styled.div`
-  background-color: var(--black);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border-top-left-radius: 70px;
-  border-top-right-radius: 70px;
-  border-bottom-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-  padding: 15px 10px;
-`;
-
 const Link = styled(NavLink)`
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--white);
-  padding: 15px;
-  text-decoration: none;
+  padding: 15px 10px;
+  /* background-color: red; */
 `;
 
-const Icon = styled.div``;
-// const Icons = styled.div``;
-Icon.User = styled(user)``;
-// Icons.Bed = styled(bed)``;
-
-export { Section, Link, Wrapper, Container, Links, Icon };
+export { Container, Section, Wrapper, Link, Logo };

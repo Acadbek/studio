@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "./style";
 
-const Button = () => {
-  return <Container type="black">Start</Container>;
+const Button = ({ children, type }) => {
+  return <Container type={type}>{children}</Container>;
 };
 
 export default Button;
