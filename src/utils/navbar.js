@@ -52,7 +52,7 @@ export const navbar = [
         <CreativePage />
       </React.Suspense>
     ),
-    title: "creative",
+    title: "Creative",
     path: "/creative",
     private: false,
     hidden: false,

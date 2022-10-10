@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
 * {
   margin: auto;
   padding: 0;
@@ -5,9 +7,11 @@
   scroll-behavior: smooth;
 }
 
+
 body {
   background-color: black;
   color: whitesmoke;
+  font-family: var(--inter);
 }
 
 :root {
@@ -16,4 +20,5 @@ body {
   --gray: #f9f8f2;
   --black: #333332;
   --blackSecondary: #1d1b1b;
+  --inter: "Inter", sans-serif;
 }
