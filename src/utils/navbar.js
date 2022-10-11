@@ -13,14 +13,14 @@ export const navbar = [
   {
     id: useId,
     element: (
-      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+      <React.Suspense>
         <HomePage />
       </React.Suspense>
     ),
     title: "Home",
     path: "/home",
     private: false,
-    hidden: true,
+    hidden: false,
   },
   {
     id: useId,

@@ -1,11 +1,12 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { ReactComponent as user } from "../../assets/icons/user.svg";
+import { NavLink } from "react-router-dom";
+// import { ReactComponent as user } from "../../assets/icons/user.svg";
 
 const Wrapper = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 `;
 
 const Container = styled.div`
@@ -42,7 +43,6 @@ const Section = styled.div`
 
 const Link = styled(NavLink)`
   padding: 15px 10px;
-  /* background-color: red; */
 `;
 
 export { Container, Section, Wrapper, Link, Logo };
