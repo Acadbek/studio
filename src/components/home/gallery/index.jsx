@@ -26,8 +26,8 @@ const Gallery = () => {
   return (
     <Container>
       {data.map(({ image, tur, name }, index) => (
-        <Content>
-          <div key={index}>
+        <Content key={index}>
+          <div>
             <Img src={image} alt="img" />
             {/* <p>{tur}</p>
             <p>{name}</p>
