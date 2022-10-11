@@ -1,8 +1,16 @@
-import React from "react";
-import Banner from "./banner";
+import React, { Fragment } from "react";
+import Banner from "../generic/banner";
+import Gallery from "./gallery";
+import InfiniteSlider from "./trusted";
 
 const Home = () => {
-  return <Banner />;
+  return (
+    <Fragment>
+      <Banner />
+      <InfiniteSlider />
+      <Gallery />
+    </Fragment>
+  );
 };
 
 export default Home;

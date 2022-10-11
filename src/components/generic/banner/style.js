@@ -33,7 +33,7 @@ const Title = styled.div`
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-family: "Inter", Sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   font-weight: 900;
   width: 100%;
   text-align: center;
