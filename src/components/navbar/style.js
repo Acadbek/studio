@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-// import { ReactComponent as user } from "../../assets/icons/user.svg";
 
 const Wrapper = styled.div`
   margin: auto;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   margin-bottom: 115px;
 `;
 
 const Container = styled.div`
+  z-index: 99999;
   height: 75px !important;
   width: 95%;
   position: fixed;
@@ -17,11 +17,15 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--black);
+  background-color: black;
+  opacity: 0.9;
   border-radius: 40px;
   padding: 0px 50px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  backdrop-filter: blur(5px);
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
 `;
 
 const Logo = styled.div`
