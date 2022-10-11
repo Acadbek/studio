@@ -29,8 +29,8 @@ export const navbar = [
         <AboutPage />
       </React.Suspense>
     ),
-    title: "About",
-    path: "/about",
+    title: "Productions",
+    path: "/productions",
     private: false,
     hidden: false,
   },
@@ -80,7 +80,7 @@ export const navbar = [
         <CreativePage />
       </React.Suspense>
     ),
-    title: "Creative",
+    title: "Creative Networking",
     path: "/creative",
     private: false,
     hidden: false,
@@ -106,6 +106,18 @@ export const navbar = [
     ),
     title: "Help",
     path: "/help",
+    private: false,
+    hidden: false,
+  },
+  {
+    id: useId,
+    element: (
+      <React.Suspense fallback={<React.Fragment>Loading...</React.Fragment>}>
+        <AboutPage />
+      </React.Suspense>
+    ),
+    title: "About",
+    path: "/about",
     private: false,
     hidden: false,
   },
