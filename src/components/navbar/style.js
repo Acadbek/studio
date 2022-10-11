@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 const Wrapper = styled.div`
   margin: auto;
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+  justify-content: center;  
+  margin-bottom: 115px;
 `;
 
 const Container = styled.div`
@@ -20,8 +20,8 @@ const Container = styled.div`
   background-color: var(--black);
   border-radius: 40px;
   padding: 0px 50px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 `;
 
 const Logo = styled.div`
