@@ -5,6 +5,13 @@ const Container = styled.div`
   width: 95%;
   margin: auto;
   border-radius: 40px;
+  img {
+    max-height: ${({ heightSize }) =>
+      heightSize ? `${heightSize}px` : "500px"};
+    width: ${({ widthSize }) => (widthSize ? `${widthSize}%` : "100%")};
+    object-fit: cover;
+    border-radius: 40px;
+  }
 `;
 
 const Blur = styled.div`
