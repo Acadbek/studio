@@ -26,16 +26,29 @@ const Container = styled.div`
   }
 `;
 
-
 const Content = styled.div`
+  color: white;
   position: relative;
   overflow: hidden;
+  p:first-child {
+    margin: 0em 0em 0em 0em;
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  p:nth-child(2) {
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
   :hover {
     .img {
       height: 300px;
     }
     .details {
-      transform: translate(-50%, -50%); 
+      transform: translate(-50%, -50%);
     }
   }
 `;
