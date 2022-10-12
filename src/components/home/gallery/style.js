@@ -45,7 +45,7 @@ const Content = styled.div`
   }
   :hover {
     .img {
-      height: 300px;
+      height: 280px;
     }
     .details {
       transform: translate(-50%, -50%);

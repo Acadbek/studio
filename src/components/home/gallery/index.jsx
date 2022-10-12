@@ -37,6 +37,7 @@ const Gallery = () => {
           </div>
         </Content>
       ))}
+      <Button style={{background: 'red'}} type={"black"}>All Projects</Button>
     </Container>
   );
 };
