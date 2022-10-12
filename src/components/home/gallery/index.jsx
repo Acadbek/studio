@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../../assets/images/Gallery1.jpg";
 import img2 from "../../../assets/images/Gallery2.jpg";
 import img3 from "../../../assets/images/Gallery3.jpg";
-import { Container, Content } from "./style";
+import { Container, Content, Title } from "./style";
 import Button from "../../generic/Button";
 
 const Gallery = () => {
@@ -25,6 +25,7 @@ const Gallery = () => {
   ];
   return (
     <Container className="container">
+      <Title>Case Studies.</Title>
       {data.map(({ image, type, name }, index) => (
         <Content key={index}>
           <img className="img" src={image} alt="img" />
@@ -37,7 +38,11 @@ const Gallery = () => {
           </div>
         </Content>
       ))}
-      <Button style={{background: 'red'}} type={"black"}>All Projects</Button>
+      <Container>
+        <Button margin={40} width={"150"} type={"black"}>
+          All Projects
+        </Button>
+      </Container>
     </Container>
   );
 };

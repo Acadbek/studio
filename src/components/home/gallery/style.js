@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  /* padding: 0 140px; */
   max-width: 1000px;
   margin: auto;
   display: flex;
@@ -53,4 +52,13 @@ const Content = styled.div`
   }
 `;
 
-export { Container, Content };
+const Title = styled.h2`
+  color: var(--e-global-color-1d13c8f);
+  font-family: "Inter", Sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 100px;
+`;
+
+export { Container, Content, Title };

@@ -1,9 +1,15 @@
 import React from "react";
 import { Container } from "./style";
 
-const Button = ({ children, type, color, hoverNone }) => {
+const Button = ({ children, type, color, hoverNone, width, margin }) => {
   return (
-    <Container hoverNone={hoverNone} color={color} type={type}>
+    <Container
+      type={type}
+      width={width}
+      color={color}
+      margin={margin}
+      hoverNone={hoverNone}
+    >
       {children}
     </Container>
   );
