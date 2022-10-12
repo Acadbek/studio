@@ -10,6 +10,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .help {
+    font-family: "Inter", Sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+    i {
+      font-weight: 700;
+    }
+  }
   .ant-collapse-borderless {
     display: flex;
     flex-direction: column;
@@ -22,7 +31,7 @@ const Container = styled.div`
   }
   .ant-collapse-header,
   .ant-collapse-item {
-    border-radius: 20px !important;
+    border-radius: 15px !important;
   }
   .ant-collapse-item {
     background-color: var(--blackSecondary);

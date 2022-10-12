@@ -47,6 +47,11 @@ const Section = styled.div`
 
 const Link = styled(NavLink)`
   padding: 15px 10px;
+  color: white;
+  font-family: var(--inter);
+  :hover{
+    color: wheat;
+  }
 `;
 
 export { Container, Section, Wrapper, Link, Logo };

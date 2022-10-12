@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <Fragment>
       <Wrapper>
-        <Container className="">
+        <Container>
           <Section>
             <Logo onClick={() => navigate("/home")}>LOGO</Logo>
           </Section>

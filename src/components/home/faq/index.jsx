@@ -4,12 +4,6 @@ import { Collapse } from "antd";
 import Button from "../../generic/Button";
 
 const Faq = () => {
-  const text = `
-	A dog is a type of domesticated animal.
-	Known for its loyalty and faithfulness,
-	it can be found as a welcome guest in many households across the world.
-`;
-
   const data = [
     {
       key: 1,
@@ -41,6 +35,12 @@ const Faq = () => {
       <Button margin={40} width={"150"} type={"black"}>
         More
       </Button>
+      <span className="help">
+        Have more questions? Reach out to us —{" "}
+        <i>
+          <a href="mailto:ibnnumon@gmail.com">help@studiio.com</a>
+        </i>
+      </span>
     </Container>
   );
 };
