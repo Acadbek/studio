@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: relative;
-  /* max-width: 1050px; */
   padding: 0 150px;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  .details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    text-align: center;
+    transition: all 0.9s ease;
+  }
+
   img {
     transition: all 0.5s ease;
     cursor: pointer;
@@ -15,17 +22,21 @@ const Container = styled.div`
     border-radius: 20px;
     width: 100%;
     object-fit: cover;
-    :hover {
+  }
+`;
+
+
+const Content = styled.div`
+  position: relative;
+  overflow: hidden;
+  :hover {
+    .img {
       height: 350px;
+    }
+    .details {
+      transform: translate(-50%, -50%);
     }
   }
 `;
 
-const Img = styled.img``;
-
-const Content = styled.div`
-  /* position: absolute; */
-  /* bottom: 0; */
-`;
-
-export { Container, Content, Img };
+export { Container, Content };
