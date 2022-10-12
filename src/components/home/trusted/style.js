@@ -7,6 +7,7 @@ const Title = styled.div`
   font-weight: 900;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 20px;
 `;
 
 export { Title };
