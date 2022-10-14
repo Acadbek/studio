@@ -1,6 +1,7 @@
 import React from "react";
 import bannerPhoto from "../../../assets/images/bannerphoto.jpg";
 import { Blur, Container, Title } from "./style";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Banner = ({ img, title, heightSize, widthSize }) => {
   return (
