@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import Button from "../generic/Button";
+import Footer from '../../components/footer'
 import { Container, Link, Section, Wrapper, Logo } from "./style";
 
 const Navbar = () => {
@@ -33,6 +34,7 @@ const Navbar = () => {
         </Container>
       </Wrapper>
       <Outlet />
+        <Footer/>
     </Fragment>
   );
 };
