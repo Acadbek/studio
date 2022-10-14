@@ -10,7 +10,7 @@ const Banner = ({ img, title, heightSize, widthSize }) => {
     <Container heightSize={heightSize} widthSize={widthSize}>
       <Blur />
       <LazyLoadImage
-        PlaceholderSrc={gallery}
+        placeholdersrc={gallery}
         height={500}
         width={100}
         delayTime={500}

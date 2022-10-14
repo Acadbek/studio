@@ -35,7 +35,7 @@ const Gallery = () => {
           {/* <img className="img" src={image} alt="img" /> */}
           <LazyLoadImage
             className="img"
-            PlaceholderSrc={gallery}
+            placeholdersrc={gallery}
             delayTime={500}
             src={image}
             alt="img"
