@@ -5,6 +5,10 @@ import img3 from "../../../assets/images/Gallery3.jpg";
 import { Container, Content, Title } from "./style";
 import Button from "../../generic/Button";
 
+import gallery from "../../../assets/images/partneer.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const Gallery = () => {
   const data = [
     {
@@ -28,7 +32,14 @@ const Gallery = () => {
       <Title>Case Studies.</Title>
       {data.map(({ image, type, name }, index) => (
         <Content key={index}>
-          <img className="img" src={image} alt="img" />
+          {/* <img className="img" src={image} alt="img" /> */}
+          <LazyLoadImage
+            className="img"
+            PlaceholderSrc={gallery}
+            delayTime={500}
+            src={image}
+            alt="img"
+          />
           <div className="details">
             <p>{type}</p>
             <p>{name}</p>
