@@ -1,3 +1,14 @@
+import { useEffect } from "react";
 import Spaces from "../../components/spaces";
-const SpacesPage = () => <Spaces />;
+import useToTop from "../../hooks/useToTop";
+
+const SpacesPage = () => {
+  const toTop = useToTop();
+
+  useEffect(() => {
+    toTop();
+  }, []);
+
+  return <Spaces />;
+};
 export default SpacesPage;

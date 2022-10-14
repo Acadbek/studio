@@ -1,3 +1,14 @@
+import { useEffect } from "react";
 import Events from "../../components/events";
-const EventsPage = () => <Events />;
+import useToTop from "../../hooks/useToTop";
+
+const EventsPage = () => {
+  const toTop = useToTop();
+
+  useEffect(() => {
+    toTop();
+  }, []);
+
+  return <Events />;
+};
 export default EventsPage;
