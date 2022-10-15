@@ -4,22 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* margin: 0;
-  padding: 0; */
-  /* box-sizing: border-box; */
-  scroll-behavior: smooth;
-}
-
-body {
-  /* margin: 0;
-  padding: 0; */
-  background-color: #fffdfc;
-  /* color: whitesmoke; */
-  /* color: black; */
-  font-family: var(--inter);
-}
-
 :root {
   --padding: 0 180px;
   --white: #fffdfc;
@@ -27,6 +11,11 @@ body {
   --black: #333332;
   --blackSecondary: #1d1b1b;
   --inter: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fffdfc;
+  font-family: var(--inter);
 }
 
 @keyframes scroll {
@@ -81,7 +70,6 @@ body {
   height: 78px;
   width: 100%;
   object-fit: cover;
-  /* background-color: red; */
 }
 
 .lazy-load-image-loaded {

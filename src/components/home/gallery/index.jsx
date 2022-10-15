@@ -8,8 +8,18 @@ import Button from "../../generic/Button";
 import gallery from "../../../assets/images/partneer.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useNavigate } from "react-router-dom";
+import { logDOM } from "@testing-library/react";
+
+let items = [1, 3, 7, 8, 9, 84444, 77, 888, 90];
 
 const Gallery = () => {
+  const navigate = useNavigate();
+
+  const onSelect = () => {
+    navigate(`/home/${Math.random()}`);
+  };
+
   const data = [
     {
       image: img1,
@@ -27,31 +37,36 @@ const Gallery = () => {
       name: "Säker Canine",
     },
   ];
-  const onSelect = () => {};
+
   return (
     <Container className="container">
       <Title>Case Studies.</Title>
       {data.map(({ image, type, name }, index) => (
         <Content key={index}>
-          {/* <img className="img" src={image} alt="img" /> */}
           <LazyLoadImage
-            className="img"
             placeholdersrc={gallery}
-            delayTime={500}
+            delayTime={200}
             src={image}
             alt="img"
+            effect="blur"
+            id="img"
           />
           <div className="details">
             <p>{type}</p>
             <p>{name}</p>
-            <Button hoverNone={false} color="white" type={"white"}>
+            <Button
+              onClick={onSelect}
+              hoverNone={false}
+              color="white"
+              type={"white"}
+            >
               View Project
             </Button>
           </div>
         </Content>
       ))}
       <Container>
-        <Button onClick={onSelect} margin={40} width={"150"} type={"black"}>
+        <Button margin={40} width={"150"} type={"black"}>
           All Projects
         </Button>
       </Container>

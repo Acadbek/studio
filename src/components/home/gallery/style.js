@@ -15,7 +15,7 @@ const Container = styled.div`
     transition: all 0.9s ease;
   }
 
-  img {
+  #img {
     transition: all 0.5s ease;
     cursor: pointer;
     height: 150px;
@@ -43,7 +43,7 @@ const Content = styled.div`
     font-weight: 800;
   }
   :hover {
-    .img {
+    #img {
       height: 280px;
     }
     .details {

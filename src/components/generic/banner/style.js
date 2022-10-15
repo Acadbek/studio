@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  .icon {
+    width: 30px !important;
+    /* height: 30px !important; */
+  }
   position: relative;
   width: ${({ width }) => `${width}%`};
   margin: auto;
@@ -26,19 +30,40 @@ const Blur = styled.div`
   border-radius: 40px;
 `;
 
-const Title = styled.div`
-  position: absolute;
+const Content = styled.div`
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Details = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+  span {
+    color: white;
+    font-size: 19px;
+    margin: 0 3px;
+    font-weight: 500;
+    font-family: var(--inter);
+  }
+`;
+// 6
+const Title = styled.div`
   color: #ffffff;
   font-family: "Inter", Sans-serif;
   font-size: 3.9rem;
   font-weight: 900;
-  width: 100%;
   text-align: center;
   line-height: 70px;
 `;
 
-export { Container, Blur, Title };
+export { Container, Blur, Title, Content, Details };
