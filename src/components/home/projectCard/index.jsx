@@ -11,9 +11,9 @@ const ProjectCard = ({
   mt,
   size,
   link,
+  photo,
   title,
   video,
-  photo,
   description = true,
 }) => {
   return (
