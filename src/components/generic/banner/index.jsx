@@ -15,21 +15,13 @@ const Banner = ({ img, title, heightSize, widthSize, width, height }) => {
     >
       <Blur />
       <LazyLoadImage
-        // placeholdersrc={gallery}
         height={500}
         width={100}
-        delayTime={100}
+        delayTime={200}
         src={img || bannerPhoto}
         alt="banner"
-        effect='blur'
+        effect="blur"
       />
-      {/* <img
-        height={500}
-        width={100}
-        src={img || bannerPhoto}
-        alt="banner"
-        loading="lazy"
-      /> */}
       <Title>{title || "Never worry about content again. Seriously."}</Title>
     </Container>
   );
