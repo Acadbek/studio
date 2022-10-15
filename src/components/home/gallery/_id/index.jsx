@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Banner from "../../../generic/banner";
-
-const Slug = ({ img, title, desc }) => {
+import img from "../../../../assets/images/Gallery3.jpg";
+import { Blur, Wrapper, Container, Flex, Content, Title } from "./style";
+import ProjectCard from "../../projectCard";
+import Carousel from "nuka-carousel/lib/carousel";
+import Button from "../../../generic/Button";
+const Slug = ({ title, desc }) => {
   const params = useParams();
 
   useEffect(() => {
@@ -10,15 +14,35 @@ const Slug = ({ img, title, desc }) => {
   });
 
   return (
-    <div>
+    <Wrapper>
+      {/* <Blur /> */}
       <Banner
-        width={85}
+        img={img}
+        width={75}
         height={400}
         details={true}
         heightSize={420}
         title={title || "Honey Skincare"}
       />
-    </div>
+      <Container>
+        <Content>
+          <ProjectCard />
+          <ProjectCard title="What did we solve for them?" />
+        </Content>
+        <ProjectCard description={false} size={45} title={"Reels"} video />
+        <ProjectCard
+          mt={40}
+          description={false}
+          size={45}
+          title={"Photos"}
+          photo
+        />
+        <Flex>
+          <Title>Level Up Your Content.</Title>
+          <Button type="black">Start</Button>
+        </Flex>
+      </Container>
+    </Wrapper>
   );
 };
 

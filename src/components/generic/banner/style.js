@@ -6,7 +6,7 @@ const Container = styled.div`
     /* height: 30px !important; */
   }
   position: relative;
-  width: ${({ width }) => `${width}%`};
+  width: ${({ width }) => (width ? `${width}%` : "100%")};
   margin: auto;
   height: ${({ height }) => (height ? `${height}px` : "100%")};
   border-radius: 40px;
@@ -31,8 +31,8 @@ const Blur = styled.div`
 `;
 
 const Content = styled.div`
-  width: 100%;
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -58,6 +58,7 @@ const Details = styled.div`
 `;
 // 6
 const Title = styled.div`
+  /* position: absolute; */
   color: #ffffff;
   font-family: "Inter", Sans-serif;
   font-size: 3.9rem;

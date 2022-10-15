@@ -47,7 +47,8 @@ const Banner = ({
               />
             </svg>
             <span>{type || "Service"}</span>
-            <svg style={{marginLeft: '20px'}}
+            <svg
+              style={{ marginLeft: "20px" }}
               width={25}
               height={25}
               xmlns="http://www.w3.org/2000/svg"
