@@ -8,6 +8,7 @@ const CreativePage = React.lazy(() => import("../pages/creative"));
 const EventsPage = React.lazy(() => import("../pages/events"));
 const HelpPage = React.lazy(() => import("../pages/helpPage"));
 const SpacesPage = React.lazy(() => import("../pages/spacesPages"));
+const Slug = React.lazy(() => import("../components/home/gallery/_id"));
 
 export const navbar = [
   {
@@ -21,6 +22,18 @@ export const navbar = [
     path: "/home",
     private: false,
     hidden: false,
+  },
+  {
+    id: useId,
+    element: (
+      <React.Suspense>
+        <Slug />
+      </React.Suspense>
+    ),
+    title: "Home",
+    path: "/home/:id",
+    private: true,
+    hidden: true,
   },
   {
     id: useId,
@@ -46,32 +59,6 @@ export const navbar = [
     icon: arrow,
     private: false,
     hidden: false,
-    addition: [
-      {
-        id: useId,
-        icon: "",
-        title: "Cyc Wall",
-        path: "/spaces/wall",
-      },
-      {
-        id: useId,
-        icon: "",
-        title: "Co-Working",
-        path: "/spaces/wall",
-      },
-      {
-        id: useId,
-        icon: "",
-        title: "Podcasting",
-        path: "/spaces/wall",
-      },
-      {
-        id: useId,
-        icon: "",
-        title: "Warehouse",
-        path: "/spaces/wall",
-      },
-    ],
   },
   {
     id: useId,

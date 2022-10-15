@@ -5,26 +5,31 @@ import { Blur, Container, Title } from "./style";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const Banner = ({ img, title, heightSize, widthSize }) => {
+const Banner = ({ img, title, heightSize, widthSize, width, height }) => {
   return (
-    <Container heightSize={heightSize} widthSize={widthSize}>
+    <Container
+      height={height}
+      width={width}
+      heightSize={heightSize}
+      widthSize={widthSize}
+    >
       <Blur />
       <LazyLoadImage
-        placeholdersrc={gallery}
+        // placeholdersrc={gallery}
         height={500}
         width={100}
-        delayTime={500}
+        delayTime={100}
         src={img || bannerPhoto}
         alt="banner"
+        effect='blur'
       />
       {/* <img
-				height={500}
-				width={100}
-				src={img || bannerPhoto}
-				alt="banner"
-				loading="lazy"
-			/>
-			<iframe src={bannerPhoto} loading="lazy"></iframe> */}
+        height={500}
+        width={100}
+        src={img || bannerPhoto}
+        alt="banner"
+        loading="lazy"
+      /> */}
       <Title>{title || "Never worry about content again. Seriously."}</Title>
     </Container>
   );

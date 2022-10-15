@@ -27,6 +27,7 @@ const Gallery = () => {
       name: "Säker Canine",
     },
   ];
+  const onSelect = () => {};
   return (
     <Container className="container">
       <Title>Case Studies.</Title>
@@ -50,7 +51,7 @@ const Gallery = () => {
         </Content>
       ))}
       <Container>
-        <Button margin={40} width={"150"} type={"black"}>
+        <Button onClick={onSelect} margin={40} width={"150"} type={"black"}>
           All Projects
         </Button>
       </Container>

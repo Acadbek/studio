@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  width: 95%;
+  width: ${({ width }) => `${width}%`};
   margin: auto;
+  height: ${({ height }) => (height ? `${height}px` : "100%")};
   border-radius: 40px;
   img {
     max-height: ${({ heightSize }) =>

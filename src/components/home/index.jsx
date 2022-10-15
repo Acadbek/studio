@@ -7,7 +7,7 @@ import InfiniteSlider from "./trusted";
 const Home = () => {
   return (
     <Fragment>
-      <Banner />
+      <Banner width={95} />
       <InfiniteSlider />
       <Gallery />
       <Faq />
