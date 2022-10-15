@@ -6,8 +6,6 @@ import {
   VideoContent,
 } from "./style";
 import React from "react";
-import Carousel from "nuka-carousel/lib/carousel";
-import img from "../../../assets/images/Gallery1.jpg";
 
 const ProjectCard = ({
   mt,

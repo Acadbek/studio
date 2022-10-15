@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import Banner from "../../../generic/banner";
 import img from "../../../../assets/images/Gallery3.jpg";
-import { Blur, Wrapper, Container, Flex, Content, Title } from "./style";
+import {  Wrapper, Container, Flex, Content, Title } from "./style";
 import ProjectCard from "../../projectCard";
-import Carousel from "nuka-carousel/lib/carousel";
 import Button from "../../../generic/Button";
 const Slug = ({ title, desc }) => {
-  const params = useParams();
 
   useEffect(() => {
     window.scrollTo(0, 0);
